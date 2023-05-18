@@ -1,0 +1,27 @@
+{
+  "name": "trailine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon dist/index.js",
+    "debug": "nodemon  --inspect dist/index.js",
+    "compile": "node_modules/typescript/bin/tsc -w",
+    "compile-once": "node_modules/typescript/bin/tsc",
+    "test": "node_modules/.bin/mocha -r ts-node/register 'src/tests/*'"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.3.5",
+    "@types/mocha": "^10.0.1",
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.22",
+    "sinon": "^15.0.4"
+  }
+}
